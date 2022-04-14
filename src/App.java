@@ -12,8 +12,8 @@ public class App {
         Sistema.facultades.instanciarFacultades();
         
         RegistroLogin.recuperarDatosLogin();
-        Sistema.trabajadores.recuperarSerial();
-      
+        //Sistema.trabajadores.recuperarSerial();
+        Sistema.trabajadores.addTrabajador(new Trabajador("Eliot", "Alderson", "Robot", "Puyen", "", "", "", "", "", "", "", "", "", "", ""));
         FrmLogin frmLogin = new FrmLogin();
         ControladorFrmLogin controladorFrmLogin = new ControladorFrmLogin(frmLogin);
     }
